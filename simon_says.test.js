@@ -1,8 +1,6 @@
-const echo = require('./simon_says.js').echo;
-const shout = require('./simon_says.js').shout;
-const repeat = require('./simon_says.js').repeat;
-const startOfWord = require('./simon_says.js').startOfWord;
-const firstWord = require('./simon_says.js').firstWord;
+
+const {echo, shout, repeat, startOfWord, firstWord } = require("./simon_says.js");
+
 
 test('echo hello', () => {
   expect(echo('hello')).toEqual('hello');
@@ -36,4 +34,3 @@ test('start of word returns first two letters', () => {
 test('first word', () => {
   expect(firstWord('Hello World')).toEqual('Hello');
 });
-
